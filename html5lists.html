@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+    <script src="html_lists.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
+    <link rel="icon" href="icon.png">
+    <title>STEMe</title>
+</head>
+<body>
+    <div class="nav">
+        <h5 class="nav-logo">STEMe</h5>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="courses.html" class="nav-item">Courses</a>
+        <a href="web_design.html" class="nav-item">Web Design</a>
+        <a href="" class="nav-item">Electronics</a>
+        <a href="" class="nav-item">Lua Scripting</a>
+        <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <h1>HTML5 Lists & Buttons</h1>
+            <ul id="listsinfo">
+                <li>We can also display lists in HTML.</li>
+                <li>You are looking at a list right now.</li>  
+                <li>This list is called an unordered list and is defined with the &lt;ul&gt;&lt;/ul&gt; tags.</li>
+                <li>Unordered lists use bullet points.</li>
+                <li>The other type of list is called an ordered list and uses numbers. It uses the &lt;ol&gt;&lt;/ol&gt; tags.</li>
+                <li>To display items in a list, use the list item tags (&lt;li&gt;&lt;/li&gt;)</li>
+
+                <h3>Example (ordered list):</h3>
+                <ol>
+                    <li>Buy food</li>
+                    <li>Cook food</li>
+                    <li>Eat food</li>
+                </ol>
+                <br>
+
+                <li>To make buttons, just use the &lt;button&gt;&lt;/button tags.&gt;</li>
+            </ul>
+
+        </div>
+
+        <div class="col-6">
+            <h1>Questions</h1>
+            <button onclick="reveal()" id="listsbtnshow">Press To Reveal Questions</button>
+
+            <div id="listsquestions">
+                <h3>1) What do unordered lists use?</h3>
+                Bullet Points <input type="radio" name="lu" id="bp">
+                <br>
+                Numbers <input type="radio" name="lu">
+                <br>
+                Both <input type="radio" name="lu">
+
+                <h3>2) How many types of lists exist in HTML (in words)?</h3>
+                <input type="text" id="listexist">
+
+                <button onclick="mark()">Mark Answers</button>
+                <p id="results"></p>
+                <p id="extra1"></p>
+                <p id="extra2"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@keyframes reveal {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+#A {
+    animation: reveal 1s;
+}
+
+#B {
+    animation: reveal 3s;
+}
+
+#C {
+    animation: reveal 6s;
+}
+
+.cardNew {
+    box-shadow: 5px 5px 25px gray;
+    padding: 8px;
+    animation: reveal 1s;
+}
+
+@font-face {
+    font-family: "font";
+    src: url("SourceSansPro-Bold.ttf");
+}
+
+body, h1, button, h2, h3, h4, h5, h6, p {
+    font-family: "font";
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(112, 112, 112);
+}

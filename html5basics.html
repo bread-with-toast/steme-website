@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+    <script src="html_basics.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
+    <link rel="icon" href="icon.png">
+    <title>STEMe</title>
+</head>
+<body>
+    <div class="nav">
+        <h5 class="nav-logo">STEMe</h5>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="courses.html" class="nav-item">Courses</a>
+        <a href="web_design.html" class="nav-item">Web Design</a>
+        <a href="" class="nav-item">Electronics</a>
+        <a href="" class="nav-item">Lua Scripting</a>
+        <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <h1>HTML5 Basics</h1>
+            <ul id="basicsinfo">
+                <li>HTML is used to generate content on websites, like this page.</li>
+                <li>HTML stands for Hypertext Markup Language</li>
+                <li>To make a paragraph in HTML, use the &lt;p&gt;&lt;/p&gt; tags</li>
+                <li>To make a header in HTML, use the &lt;h1&gt;&lt;/h1&gt; tags. The number can be changed for different sizes.</li>
+
+                <h3>Example:</h3>
+                <h1>H1</h1>
+                <h2>H2</h2>
+                <h3>H3</h3>
+                <h4>H4</h4>
+                <h5>H5</h5>
+                <h6>H6</h6>
+                <p>This is some text.</p>
+            </ul>
+        </div>
+
+        <div class="col-6">
+            <h1>Questions</h1>
+            <button onclick="reveal()" id="basicsbtnshow">Press To Reveal Questions</button>
+
+            <div id="basicsquestions">
+                <h3>1) What is HTML used for?</h3>
+                To Style Web Pages <input type="radio" name="basics1" id="basicsstyle">
+                <br>
+                To Show Content On Web Pages <input type="radio" name="basics1" id="basicsshow">
+                <br>
+                To Script Web Pages <input type="radio" name="basics1" id="basicsscript">
+
+                <h3>2) What does HTML stand for?</h3>
+                <input type="text" id="basicsstand">
+
+                <button onclick="mark()">Mark Answers</button>
+                <p id="results"></p>
+                <p id="extra"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
