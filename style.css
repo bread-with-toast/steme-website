@@ -30,7 +30,7 @@
 
 .cardNew {
     box-shadow: 5px 5px 25px gray;
-    padding: 8px;
+    padding: 16px;
     animation: reveal 1s;
 }
 
@@ -44,10 +44,18 @@ body, h1, button, h2, h3, h4, h5, h6, p {
 }
 
 a {
-    color: black;
+    color: rgb(89, 123, 168);
     text-decoration: none;
 }
 
 a:hover {
     color: rgb(112, 112, 112);
+}
+
+.blue {
+    color: rgb(103, 144, 197)
+}
+
+.blue-bg {
+    background-color: rgb(103, 144, 197)
 }
