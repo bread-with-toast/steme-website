@@ -6,6 +6,7 @@ function reveal() {
     document.getElementById("imagesbtnshow").hidden = true
 }
 
+
 function mark() {
     let first = 0
     let second = 0

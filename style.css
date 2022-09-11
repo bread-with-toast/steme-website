@@ -29,7 +29,7 @@
 }
 
 .cardNew {
-    box-shadow: 5px 5px 25px gray;
+    box-shadow: 2px 2px 5px gray;
     padding: 16px;
     animation: reveal 1s;
 }
