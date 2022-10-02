@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="html_classes.js" defer></script>
+    <script src="css_basics.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -14,7 +14,7 @@
 <body>
     <div class="nav">
         <h5 class="nav-logo">STE<span class="blue">Me</span></h5>
-
+        
         <a href="index.html" class="nav-item">Home</a>
         <a href="courses.html" class="nav-item">Courses</a>
         <a href="web_design.html" class="nav-item">Web Design</a>
@@ -25,30 +25,39 @@
 
     <div class="row">
         <div class="col-6">
-            <h1>HTML5 Divs, Classes & IDs</h1>
-            <ul id="classinfo">
-                <li>HTML Divs can be used to seperate your HTML source code for your websites websites. Use the &lt;div&gt; &lt;/div&gt; tags to create a div.</li>
-                <li>HTML Classes can be used to style more than one element by using the class="" attribute in an element.</li>
-                <li>HTML IDs can be added to an element by adding the id="" attribute. IDs also help style elements.</li>
+            <h1>CSS Basics</h1>
+            <ul id="basicsinfo">
+                <li>CSS is used to style web pages.</li>
+                <li>CSS stands for Cascading Style Sheets.</li>
+                <li>Create a CSS file by using the .css file extension</li>
+                <li>You can also create in-line CSS in your HTML by using the &lt;style&gt;&lt;/style&gt; tags.</li>
+            </ul>
         </div>
 
         <div class="col-6">
             <h1>Questions</h1>
-            <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
+            <button onclick="reveal()" id="basicsbtnshow">Press To Reveal Questions</button>
 
-            <div id="classq">
-                <h3>1) How is a div made?</h3>
-                <input type="text" id="divmade">
+            <div id="basicsquestions">
+                <h3>1) What is CSS used for?</h3>
+                To Script Web Pages <input type="radio" name="basics1" id="basicscript">
+                <br>
+                To Style Web Pages <input type="radio" name="basics1" id="basicstyle">
+                <br>
+                To Write Text <input type="radio" name="basics1" id="basicwrite">
 
-                <h3>2) What attribute should be used to create an id?</h3>
-                <input type="text" id="idatr">
+                <h3>2) What does CSS stand for?</h3>
+                <input type="text" id="basicsstand">
+
+                <h3>3) What is the opening tag for in-line CSS?</h3>
+                <input type="text" id="basicsopen">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>
                 <p id="extra1"></p>
                 <p id="extra2"></p>
+                <p id="extra3"></p>
 
-                <button><a style="color: white;" href="css_basics.html">CSS Course Basics</a></button>
             </div>
         </div>
     </div>
