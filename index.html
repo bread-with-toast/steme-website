@@ -10,24 +10,31 @@
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="stylesheet" href="style.css">
-<script src="https://api.sparky.run/widget?id=631e0f5c9ed718e226416569" type="text/javascript" crossorigin="anonymous"></script>    <title>STEMe</title>
+    <script src="index.js" defer></script>
+<!-- <script src="https://api.sparky.run/widget?id=631e0f5c9ed718e226416569" type="text/javascript" crossorigin="anonymous"></script>    <title>STEMe</title> -->
 </head>
 <body>
     <div class="nav">
-        <h5 class="nav-logo">STE<span class="blue">Me</span></h5>
+        <a class="nav-logo" href="index.html" style="color: black;"> STE<span class="blue">Me</span> </a>
         <a href="index.html" class="nav-item">Home</a>
         <a href="courses.html" class="nav-item">Courses</a>
         <a href="web_design.html" class="nav-item">Web Design</a>
         <a href="" class="nav-item">Electronics</a>
         <a href="" class="nav-item">Lua Scripting</a>
+        <a href="blog.html" class="nav-item">Blog</a>
         <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
     </div>
 
     <div class="text-center">
-        <h1 class="down">Enjoy <span class="blue">Learning</span></h1>
+        <h1 id="title_content"></h1>
         <p>With STEMe, you can finally enjoy learning with simple, compact lessons and a simple user interface on the go!</p>
         <button class="blue-bg"><a href="courses.html" style="color: white; text-decoration: none">View Our Courses</a></button>
         <button class="outline"><a href="https://github.com/bread-with-toast/steme-website" style="color: black; text-decoration: none">View The Source Code</a></button>
+    </div>
+
+    <div class="cardNew">
+        <h1 class="blue">New Feature</h1>
+        <p>We've added a blog! Go to the Blog tab and read our first article if you please!</p>
     </div>
 
     <h1 class="text-center">Why STEMe?</h1>
@@ -35,19 +42,16 @@
     <div class="row">
         <div class="col-4 cardNew" id="A">
             <h1>Learn <span class="blue">On The Go</span></h1>
-            <img src="phone.png" alt="Picture Of Someone Infront Of A Phone" width="250px">
-            <p>Our new website allows you to learn from any device - not just your desktop!</p>
+            <p>Learn from anywhere with an internet connection and a search engine with our website.</p>
         </div>
 
         <div class="col-4 cardNew" id="B">
             <h1><span class="blue">Compact</span> Lessons</h1>
-            <img src="lessons.png" alt="Picture Of Someone Teaching" width="250px">
             <p>We've made our lessons simple so you can learn easily!</p>
         </div>
 
         <div class="col-4 cardNew" id="C">
             <h1>Free</h1>
-            <img src="free.png" alt="Picture For Savings" width="250px">
             <p>People should have education for free, so we've made our service for free and generate no profit from it!</p>
         </div>
     </div>
@@ -57,5 +61,10 @@
         <button class="blue-bg" class="text-center"><a href="courses.html" style="color: white; text-decoration: none">View Our Courses</a></button>
         <button class="outline"><a href="https://github.com/bread-with-toast/steme-website" style="color: black; text-decoration: none">View The Source Code</a></button>
     </div>
+
+    <footer class="cardNew">
+        <h2>STE<span class="blue">Me</span></h2>
+        <h5><i>Attempting to help people get a free education.</i></h5>
+    </footer>
 </body>
 </html>
