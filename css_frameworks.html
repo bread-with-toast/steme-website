@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="html_images.js" defer></script>
+    <script src="css_frameworks.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -14,7 +14,7 @@
 <body>
     <div class="nav">
         <a class="nav-logo" href="index.html" style="color: black;"> STE<span class="blue">Me</span> </a>
-
+        
         <a href="index.html" class="nav-item">Home</a>
         <a href="courses.html" class="nav-item">Courses</a>
         <a href="web_design.html" class="nav-item">Web Design</a>
@@ -26,45 +26,41 @@
 
     <div class="row">
         <div class="col-6">
-            <h1>HTML5 Images & Links</h1>
-            <ul id="imagesinfo">
-                <li>HTML can also be used to show images.</li>
-                <li>To show images, use the &lt;img&gt;</li>
-                <li>An image will need a source attribute. This tells it what to display.</li>
-                <li>In the end, an image will look like: &lt;img src=""&gt;</li>
-                <br>
-                <li>If you want to show a link in HTML, use the &lt;a&gt;&lt;/a&gt; tags.</li>
-                <li>You'll need the href attribute to use links.</li>
-                <li>In the end, a link will look like: &lt;a href="link"&gt;text&lt;/a&gt;</li>
+            <h1>CSS Frameworks</h1>
+            <ul id="basicsinfo">
+                <li>Frameworks in CSS can be used to speed up web design.</li>
+                <li>Examples of CSS Frameworks are: TailwindCSS, WingCSS and Bootstrap</li>
+                <li>TailwindCSS is different to WingCSS and Bootsrap as it us utility based.</li>
 
-                <h3 style="color: red;">Accessibility Alert!</h3>
-                <p>To make the internet more accessible, you can also use the alt="" attribute for images.</p>
-                <p>Consider adding a caption to your image aswell.</p>
-            </ul>
+                <h2>Examples</h2>
+                <h4>TailwindCSS - Set a h1's foreground colour to blue 300</h4>
+                &lt;h1 class="text-blue-300" &gt;Hello!&lt;/h1&gt;
+                <h4>Bootstrap - Set a h1's foreground colour to red</h4>
+                &lt;h1 class="text-danger" &gt;Hello!&lt;/h1&gt;
 
+                <li>Learn more at <a href="https://getbootstrap.com/">Bootsrap's website</a> and <a href="https://tailwindcss.com/">TailwindCSS's website</a></li>
+            </ul>     
         </div>
 
         <div class="col-6">
             <h1>Questions</h1>
-            <button onclick="reveal()" id="imagesbtnshow">Press To Reveal Questions</button>
+            <button onclick="reveal()" id="basicsbtnshow">Press To Reveal Questions</button>
 
-            <div id="imagesquestions">
-                <h3>1) What is the tag for an image?</h3>
-                <input type="text" id="imagestag">
+            <div id="basicsquestions">
+                <h3>1) Name a CSS Framework mentioned in this module</h3>
+                <input type="text" id="frameworkmentioned">
 
-                <h3>2) What attribute can you use to make images more accessible?</h3>
-                <input type="text" id="imagesalt">
+                <h3>2) What do CSS Frameworks allow us to do?</h3>
+                <input type="text" id="frameworksallow">
 
-                <h3>3) What does the opening tag for a link look like in the end?</h3>
-                <input type="text" id="imageslink">
+                <h3>3) Set a p element's background colour to green 400 in TailwindCSS. You may use the TailWindCSS documentaion.</h3>
+                <input type="text" id="frameworksbg">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>
                 <p id="extra1"></p>
                 <p id="extra2"></p>
                 <p id="extra3"></p>
-
-                <button><a style="color: white; "href="html5lists.html">Next Module</a></button>
             </div>
         </div>
     </div>

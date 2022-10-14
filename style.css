@@ -32,7 +32,7 @@
     box-shadow: 2px 2px 5px gray;
     padding: 16px;
     animation: reveal 1s;
-    border-color: rgb(49, 107, 182);;
+    border-color: #316bb6;
     border-style: solid;
     border-width: 5px;
 }
@@ -48,7 +48,7 @@ body, h1, button, h2, h3, h4, h5, h6, p {
 }
 
 a {
-    color: rgb(89, 123, 168);
+    color: #597ba8;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ a:hover {
 }
 
 .blue {
-    color: rgb(103, 144, 197)
+    color: #6790c5
 }
 
 .blue-bg {
