@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="html_images.js" defer></script>
+    <script src="lua_module_1.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -26,45 +26,35 @@
 
     <div class="row">
         <div class="col-6">
-            <h1>HTML5 Images & Links</h1>
-            <ul id="imagesinfo">
-                <li>HTML can also be used to show images.</li>
-                <li>To show images, use the &lt;img&gt;</li>
-                <li>An image will need a source attribute. This tells it what to display.</li>
-                <li>In the end, an image will look like: &lt;img src=""&gt;</li>
-                <br>
-                <li>If you want to show a link in HTML, use the &lt;a&gt;&lt;/a&gt; tags.</li>
-                <li>You'll need the href attribute to use links.</li>
-                <li>In the end, a link will look like: &lt;a href="link"&gt;text&lt;/a&gt;</li>
-
-                <h3 style="color: red;">Accessibility Alert!</h3>
-                <p>To make the internet more accessible, you can also use the alt="" attribute for images.</p>
-                <p>Consider adding a caption to your image aswell.</p>
+            <h1>print() and io.write()</h1>
+            <ul id="classinfo">
+                <li>We can print strings (words, phrases, sentences, etc) to the console using the print() function.</li>
+                <li>Inside the parenthesis, we can use quotation marks ("" or '') and inside of them, put in our string.</li>
+                <h2>Examples</h2>
+                <p>print("Hello!")</p>
+                <p>print("Bye!")</p>
+                <hr>
+                <h3>Output</h3>
+                <p>Hello!</p>
+                <p>Bye!</p>
             </ul>
-
         </div>
 
         <div class="col-6">
             <h1>Questions</h1>
-            <button onclick="reveal()" id="imagesbtnshow">Press To Reveal Questions</button>
+            <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
 
-            <div id="imagesquestions">
-                <h3>1) What is the tag for an image?</h3>
-                <input type="text" id="imagestag">
+            <div id="classq">
+                <h3>1) What does a string have to by surrounded by?</h3>
+                <input type="text" id="stringsurround">
 
-                <h3>2) What attribute can you use to make images more accessible?</h3>
-                <input type="text" id="imagesalt">
-
-                <h3>3) What does the opening tag for a link look like in the end?</h3>
-                <input type="text" id="imageslink">
+                <h3>2) Which function puts text to the console?</h3>
+                <input type="text" id="textconsole">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>
                 <p id="extra1"></p>
                 <p id="extra2"></p>
-                <p id="extra3"></p>
-
-                <button><a style="color: white; "href="html5lists.html">Next Module</a></button>
             </div>
         </div>
     </div>
