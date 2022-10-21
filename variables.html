@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+    <script src="variables.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
+    <link rel="icon" href="icon.png">
+<script src="https://api.sparky.run/widget?id=631e0f5c9ed718e226416569" type="text/javascript" crossorigin="anonymous"></script>    <title>STEMe</title> 
+</head>
+<body>
+    <div class="nav">
+        <a class="nav-logo" href="index.html" style="color: black;"> STE<span class="blue">Me</span> </a>
+
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="courses.html" class="nav-item">Courses</a>
+        <a href="web_design.html" class="nav-item">Web Design</a>
+        <a href="electronics.html" class="nav-item">Electronics</a>
+        <a href="lua.html" class="nav-item">Lua Scripting</a>
+        <a href="blog.html" class="nav-item">Blog</a>
+        <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Variables</h1>
+            <ul id="classinfo">
+                <li>Variables in Lua store information</li>
+                <li>There are different types of information, also known as data types</li>
+                <li>These data types are known as: 
+                    <br>
+                    Strings - Words, phrases, sentences, etc
+                    <br>
+                    Integers - Whole numbers
+                    <br>
+                    Floats - Decimal numbers
+                    <br>
+                    Booleans - True or false values
+                </li>
+                <li>To define a variables in Lua, first write the name of the variable and an equals sign. Then, 
+                    on the right side of the equals sign, you can set the value of the variable.</li>
+
+                <h2>Examples</h2>
+                x = false
+                <br>
+                print(x)
+
+                <br><br>
+                y = "hello"
+                <br>
+                print(y)
+                <hr>
+                <h2>Output</h2>
+                false
+                <br>
+                hello
+            </ul>            
+        </div>
+
+        <div class="col-6">
+            <h1>Questions</h1>
+            <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
+
+            <div id="classq">
+                <h3>1) Define a variable called "sleeping" and set it to true.</h3>
+                <input type="text" id="varq1">
+
+                <h3>2) What is a floating point data type?</h3>
+                <input type="text" id="varq2">
+
+                <h3>3) What do strings have to be surrounded by?</h3>
+                <input type="text" id="varq3">
+
+                <button onclick="mark()" class="blue-bg">Mark Answers</button>
+                <p id="results"></p>
+                <p id="extra1"></p>
+                <p id="extra2"></p>
+                <p id="extra3"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cardNew">
+        <h2>STE<span class="blue">Me</span></h2>
+        <h5><i>Attempting to help people get a free education.</i></h5>
+    </footer>
+</body>
+</html>
