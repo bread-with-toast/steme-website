@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="vcs.js" defer></script>
+    <script src="functions.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -37,20 +37,33 @@
 
     <div class="row">
         <div class="col-6">
-            <h1>Version Control Systems</h1>
+            <h1>Functions</h1>
             <ul id="classinfo">
-                <li>Version Control Systems are a way to control the versions of your programs.</li>
-                <li>Examples of Version Control Systems (VCSs) are: Git, Mercurial and SVN.</li>
-                <li>A useful feature of these VCSs is the ability to create branches. Branches allow you to have different sets of code and then the ability 
-                    to merge them together, so you don't destroy your main program.</li>
-                <li>We can also connect these local repositories to remote repositories, which are hosted on the internet.</li>
-                <h2>Examples of Git commands</h2>
-                <li>git init</li>
-                Initialises a local Git repository
-                <li>git commit -m ""</li>
-                Creates a new commit (change) with the message.
-                <li>git log</li>
-                Views the commits made to the program.
+                <li>We can use functions in Lua to define a block of code</li>
+                <li>This block of code has to be called for it to be ran</li>
+                <li>To define a function, use the function keyword followed by the function's name then two parenthesis.</li>
+                <li>You should then create an indent and write your code in the function. Once completed, end the function with the end keyword.</li>
+                <li>Functions can be called (outside of the function) by writing the function's name followed by two parenthesis.</li>
+                <li>To define parameters in the functions, which you can use in the function's code, create undefined variables in the parenthesus</li>
+                <li>When the function is called then, put your variables values in the parenthesis.</li>
+                <li>Use the return keyword to return a value, but not print it.</li>
+
+                <h2>Examples</h2>
+                function sum(a, b) <br>
+                &emsp;return a + b <br>
+                end <br> <br>
+
+                function subtract_defined() <br>
+                &emsp;print(5 - 4) <br>
+                end <br> <br>
+
+                print(sum(2, 4)) <br>
+                subtract_defined() <br> <br>
+
+                <hr>
+                <h2>Outputs</h2>
+                6 <br>
+                1
             </ul>            
         </div>
 
@@ -59,14 +72,14 @@
             <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
 
             <div id="classq">
-                <h3>1) Which Git command initalises a local Git repository?</h3>
-                <input type="text" id="localrepoinit">
+                <h3>1) What keyword is used to define a function?</h3>
+                <input type="text" id="functionsq1">
 
-                <h3>2) Where are remote repositories hosted?</h3>
-                <input type="text" id="remoterepohost">
+                <h3>2) Define the first line of a function called pick_up with the parameter item.</h3>
+                <input type="text" id="functionsq2">
 
-                <h3>3) Create a new Git commit with the message "Fixed a bug".</h3>
-                <input type="text" id="newcommit">
+                <h3>3) Call a function named wash_hands.</h3>
+                <input type="text" id="functionsq3">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>

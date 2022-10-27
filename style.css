@@ -63,3 +63,10 @@ a:hover {
 .blue-bg {
     background-color: rgb(103, 144, 197)
 }
+
+th, td, tr, table {
+    border-color: black; 
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px;
+}

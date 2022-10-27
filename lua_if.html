@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-98WD9G4377"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-98WD9G4377');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+    <script src="lua_if.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
+    <link rel="icon" href="icon.png">
+    <meta name="description" content="Free lessons in a compact format so you can learn">
+    <meta name="keywords" content="HTML, CSS, Web design, website design, learn, education, free education, easy lessons, scripting, portable education, how to make a website">
+<script src="https://api.sparky.run/widget?id=631e0f5c9ed718e226416569" type="text/javascript" crossorigin="anonymous"></script>    <title>STEMe</title> 
+</head>
+<body>
+    <div class="nav">
+        <a class="nav-logo" href="index.html" style="color: black;"> STE<span class="blue">Me</span> </a>
+
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="courses.html" class="nav-item">Courses</a>
+        <a href="web_design.html" class="nav-item">Web Design</a>
+        <a href="electronics.html" class="nav-item">Electronics</a>
+        <a href="lua.html" class="nav-item">Lua Scripting</a>
+        <a href="blog.html" class="nav-item">Blog</a>
+        <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <h1>If, Else, Else If</h1>
+            <ul id="classinfo">
+                <li>We can use an if statement to add more logic into our programs</li>
+                <li>The syntax of an if command goes like: <br>
+                    if condition then <br>
+                    &emsp;code <br>
+                    end
+                </li>
+                <li>To add an else statement, we can use the else keyword. For an elseif, use the same syntax as an if command.</li>
+
+                <h3 class="blue">Note</h3>
+                <p>Here is a list of the operators you can use in an if or elseif statement.</p>
+                <table>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Meaning</th>
+                    </tr>
+
+                    <tr>
+                        <td>==</td>
+                        <td>Equal to</td>
+                    </tr>
+
+                    <tr>
+                        <td>!=</td>
+                        <td>Not equal to</td>
+                    </tr>
+
+                    <tr>
+                        <td>x &lt; y</td>
+                        <td>y greater than x</td>
+                    </tr>
+
+                    <tr>
+                        <td>x &gt; y</td>
+                        <td>x greater than y</td>
+                    </tr>
+
+                    <tr>
+                        <td>x &gt;= y</td>
+                        <td>x greater than or equal to y</td>
+                    </tr>
+
+                    <tr>
+                        <td>x &lt;= y</td>
+                        <td>y greater than or equal to x</td>
+                    </tr>
+                </table>
+
+                <h2>Examples</h2>
+                <p>
+                    x = 0 <br>
+                    if x == 1 then <br>
+                    &emsp;print("hi") <br>
+                    else <br>
+                    &emsp;print("hello") <br>
+                    end
+                </p>
+                <hr>
+                <p>
+                    y = "hello" <br>
+                    if y != "hi" then <br>
+                    &emsp;print("y is not hi.") <br>
+                    elseif y == "pen" <br>
+                    &emsp;print("y is equal to pen.") <br>
+                    end
+                </p>
+                <hr>
+                <h2>Expected Outputs</h2>
+                hello <br>
+                y is not hi.
+            </ul>            
+        </div>
+
+        <div class="col-6">
+            <h1>Questions</h1>
+            <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
+
+            <div id="classq">
+                <h3>1) What symbol is used for not equal to?</h3>
+                <input type="text" id="ifsq1">
+
+                <h3>2) What must go at the end of every if statement?</h3>
+                <input type="text" id="ifsq2">
+
+                <h3>3) What keyword is used if every if or elseif condition has not been met?</h3>
+                <input type="text" id="ifsq3">
+
+                <button onclick="mark()" class="blue-bg">Mark Answers</button>
+                <p id="results"></p>
+                <p id="extra1"></p>
+                <p id="extra2"></p>
+                <p id="extra3"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cardNew">
+        <h2>STE<span class="blue">Me</span></h2>
+        <h5><i>Attempting to help people get a free education.</i></h5>
+    </footer>
+</body>
+</html>
