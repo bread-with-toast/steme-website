@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-98WD9G4377"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-98WD9G4377');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+    <script src="electronics_1.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
+    <link rel="icon" href="icon.png">
+    <meta name="description" content="Free lessons in a compact format so you can learn">
+    <meta name="keywords" content="HTML, CSS, Web design, website design, learn, education, free education, easy lessons, scripting, portable education, how to make a website">
+<script src="https://api.sparky.run/widget?id=631e0f5c9ed718e226416569" type="text/javascript" crossorigin="anonymous"></script>    <title>STEMe</title> 
+</head>
+<body>
+    <div class="nav">
+        <a class="nav-logo" href="index.html" style="color: black;"> STE<span class="blue">Me</span> </a>
+
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="courses.html" class="nav-item">Courses</a>
+        <a href="web_design.html" class="nav-item">Web Design</a>
+        <a href="electronics.html" class="nav-item">Electronics</a>
+        <a href="lua.html" class="nav-item">Lua Scripting</a>
+        <a href="blog.html" class="nav-item">Blog</a>
+        <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <h1>LEDs & Breadboards</h1>
+            <ul id="classinfo">
+                <li>LED stands for Light Emitting Diode.</li>
+                <li>LEDs are a type of diode, which means they only allow current to travel in one way </li>
+                <li>LEDs have two leads/legs/pins. The longer one is the anode (goes to the + side of a battery) and another is the cathode (- side).</li>
+                <li>Breadboards are used to prototype circuits.</li>
+                <li>They might have two rows at the top and bottom, one for VCC (voltage) and the other for ground (-).</li>
+                <li>The columns in a breadboard are connected.</li>
+            </ul>            
+        </div>
+
+        <div class="col-6">
+            <h1>Questions</h1>
+            <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
+
+            <div id="classq">
+                <h3>1) What is connected in a breadboard?</h3>
+                <input type="text" id="elt1">
+
+                <h3>2) How many legs do LEDs have? </h3>
+                <input type="text" id="elt2">
+
+                <h3>3) What does LED stand for></h3>
+                <input type="text" id="elt3">
+
+                <button onclick="mark()" class="blue-bg">Mark Answers</button>
+                <p id="results"></p>
+                <p id="extra1"></p>
+                <p id="extra2"></p>
+                <p id="extra3"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cardNew">
+        <h2>STE<span class="blue">Me</span></h2>
+        <h5><i>Attempting to help people get a free education.</i></h5>
+    </footer>
+</body>
+</html>
