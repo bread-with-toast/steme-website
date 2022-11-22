@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="electronics_3.js" defer></script>
+    <script src="ohms_law.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -39,12 +39,24 @@
 
     <div class="row">
         <div class="col-6">
-            <h1>Buzzers</h1>
+            <h1>Ohm's Law</h1>
             <ul id="classinfo">
-                <li>Buzzers are electronic components which can be used to make sound.</li>
-                <li>There are different types of buzzers, but the two mentioned in this module are called piezoelectric and magnetic buzzers.</li>
-                <li>Piezoelectric buzzers use piezoelectric ceramics, which is a material that changes forces into an electrical signal, while magnetic buzzers use a metal plate.</li>
-                <li>Buzzers are also polarised.</li>
+                <li>Ohm's Law is a set of formulae which we can use to calculate current (I), resistance (R) and voltage (V).</li>
+                <li>Current is the speed at which electricity travels.</li>
+                <li>Voltage is the difference of electric charge between two points.</li>
+                <li>Here are the formulae for ohm's law:</li>
+                <li>V = I*R</li>
+                <li>I = V/R</li>
+                <li>R = V/I</li>
+
+                <h2>Examples</h2>
+                <p>V = 5 volts</p>
+                <p>I = 0.01 amps</p>
+                <p>Resistance = 5 / 0.01 = 500 ohms</p>
+
+                <p>R = 220 ohms</p>
+                <p>I = 0.02 amps</p>
+                <p>Voltage = 0.02 * 220 = 4.4 volts</p>
             </ul>            
         </div>
 
@@ -53,15 +65,15 @@
             <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
 
             <div id="classq">
-                <h3>1) Which material do piezoelectric buzzers use?</h3>
-                <input type="text" id="elt31">
+                <h3>1) What is the formula for calculating current?</h3>
+                <p>Use the same letters as shown in this module</p>
+                <input type="text" id="ohmslaw1">
 
-                <h3>2) Are buzzers polarised?</h3>
-                <input type="text" id="elt32">
+                <h3>2) What is voltage?</h3>
+                <input type="text" id="ohmslaw2">
 
-                <h3>3) Name both types of buzzers mentioned in this module with a space between them.</h3>
-                <p>Your answer should be in alphabetical order and not contain the word "buzzer"</p>
-                <input type="text" id="elt33">
+                <h3>3) If the voltage of a circuit of 9 volts and the resistance was 1000 ohms (1 kiloOhm), calculate the current.</h3>
+                <input type="text" id="ohmslaw3">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>

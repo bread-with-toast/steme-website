@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="electronics_3.js" defer></script>
+    <script src="text_editors.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -25,7 +25,6 @@
 <body>
     <div class="nav">
         <a class="nav-logo" href="index.html" style="color: black;"> STE<span class="blue">Me</span> </a>
-
         <a href="index.html" class="nav-item">Home</a>
         <a href="courses.html" class="nav-item">Courses</a>
         <a href="web_design.html" class="nav-item">Web Design</a>
@@ -39,12 +38,13 @@
 
     <div class="row">
         <div class="col-6">
-            <h1>Buzzers</h1>
+            <h1>Text Editors</h1>
             <ul id="classinfo">
-                <li>Buzzers are electronic components which can be used to make sound.</li>
-                <li>There are different types of buzzers, but the two mentioned in this module are called piezoelectric and magnetic buzzers.</li>
-                <li>Piezoelectric buzzers use piezoelectric ceramics, which is a material that changes forces into an electrical signal, while magnetic buzzers use a metal plate.</li>
-                <li>Buzzers are also polarised.</li>
+                <li>Text editors and IDEs (integrated development environments) are an essential tool developers need to write code.</li>
+                <li>There are different types of text editors. Some are terminal-based and some are in a GUI.</li>
+                <li>Also, there are text editors known as modal text editors.</li>
+                <li>Modal text editors require you to press certain keys to go into different modes. For example, to insert text in Vim, prss the I key.</li>
+                <li>Other modal editors include Vi and Emacs. Non-modal text editors include software such as Visual Studio Code and Atom (which went out of date).</li>
             </ul>            
         </div>
 
@@ -53,15 +53,14 @@
             <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
 
             <div id="classq">
-                <h3>1) Which material do piezoelectric buzzers use?</h3>
-                <input type="text" id="elt31">
+                <h3>1) How do you enter different modes in a modal text editor?</h3>
+                <input type="text" id="te1">
 
-                <h3>2) Are buzzers polarised?</h3>
-                <input type="text" id="elt32">
+                <h3>2) What does IDE stand for?</h3>
+                <input type="text" id="te2">
 
-                <h3>3) Name both types of buzzers mentioned in this module with a space between them.</h3>
-                <p>Your answer should be in alphabetical order and not contain the word "buzzer"</p>
-                <input type="text" id="elt33">
+                <h3>3) Name a non-modal editor mentioned in this module.</h3>
+                <input type="text" id="te3">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>

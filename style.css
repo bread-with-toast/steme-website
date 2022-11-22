@@ -64,6 +64,18 @@ a:hover {
     background-color: rgb(103, 144, 197)
 }
 
+.green-bg {
+    background-color: rgb(103, 197, 150)
+}
+
+.yellow-bg {
+    background-color: rgb(255, 250, 146)
+}
+
+.lighter-blue {
+    background-color: rgb(146, 226, 255)
+}
+
 th, td, tr, table {
     border-color: black; 
     border-style: solid;

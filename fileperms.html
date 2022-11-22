@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="electronics_3.js" defer></script>
+    <script src="fileperms.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -25,7 +25,7 @@
 <body>
     <div class="nav">
         <a class="nav-logo" href="index.html" style="color: black;"> STE<span class="blue">Me</span> </a>
-
+        
         <a href="index.html" class="nav-item">Home</a>
         <a href="courses.html" class="nav-item">Courses</a>
         <a href="web_design.html" class="nav-item">Web Design</a>
@@ -39,29 +39,75 @@
 
     <div class="row">
         <div class="col-6">
-            <h1>Buzzers</h1>
-            <ul id="classinfo">
-                <li>Buzzers are electronic components which can be used to make sound.</li>
-                <li>There are different types of buzzers, but the two mentioned in this module are called piezoelectric and magnetic buzzers.</li>
-                <li>Piezoelectric buzzers use piezoelectric ceramics, which is a material that changes forces into an electrical signal, while magnetic buzzers use a metal plate.</li>
-                <li>Buzzers are also polarised.</li>
-            </ul>            
+            <h1>File Permissions</h1>
+            <ul id="basicsinfo">
+                <li>We can use the chmod command to change file permissions in the Linux terminal.</li>
+                <li>The syntax of the command is: </li>
+                <li>chmod [people]-[permission] [file]</li>
+                <li>For example, chmod -r hello.txt adds read permissions to the owner of the file hello.txt.</li>
+                <li>The [people] parameter is optional.</li>
+
+                <p>Table For [permission]</p>
+                <table>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Meaning</th>
+                    </tr>
+
+                    <tr>
+                        <td>-r</td>
+                        <td>Read</td>
+                    </tr>
+
+                    <tr>
+                        <td>-w</td>
+                        <td>Write</td>
+                    </tr>
+
+                    <tr>
+                        <td>-x</td>
+                        <td>Run</td>
+                    </tr>
+                </table>
+
+                <p>Table For [people]</p>
+                <table>
+                    <tr>
+                        <th>People</th>
+                        <th>Meaning</th>
+                    </tr>
+
+                    <tr>
+                        <td>o</td>
+                        <td>Others</td>
+                    </tr>
+
+                    <tr>
+                        <td>g</td>
+                        <td>Group</td>
+                    </tr>
+
+                    <tr>
+                        <td>a</td>
+                        <td>All</td>
+                    </tr>
+                </table>
+            </ul>     
         </div>
 
         <div class="col-6">
             <h1>Questions</h1>
-            <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
+            <button onclick="reveal()" id="basicsbtnshow">Press To Reveal Questions</button>
 
-            <div id="classq">
-                <h3>1) Which material do piezoelectric buzzers use?</h3>
-                <input type="text" id="elt31">
+            <div id="basicsquestions">
+                <h3>1) What is the command for adding read permissions to a file for all people to a file called a.txt?</h3>
+                <input type="text" id="fileperms1">
 
-                <h3>2) Are buzzers polarised?</h3>
-                <input type="text" id="elt32">
+                <h3>2) What is the syntax to add file permissions to a file?</h3>
+                <input type="text" id="fileperms2">
 
-                <h3>3) Name both types of buzzers mentioned in this module with a space between them.</h3>
-                <p>Your answer should be in alphabetical order and not contain the word "buzzer"</p>
-                <input type="text" id="elt33">
+                <h3>3) Write the command to add write permissions to a file called hi.txt to the owner of the file.</h3>
+                <input type="text" id="fileperms3">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>

@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="electronics_3.js" defer></script>
+    <script src="directories.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -25,49 +25,48 @@
 <body>
     <div class="nav">
         <a class="nav-logo" href="index.html" style="color: black;"> STE<span class="blue">Me</span> </a>
-
+        
         <a href="index.html" class="nav-item">Home</a>
         <a href="courses.html" class="nav-item">Courses</a>
         <a href="web_design.html" class="nav-item">Web Design</a>
         <a href="electronics.html" class="nav-item">Electronics</a>
         <a href="lua.html" class="nav-item">Lua Scripting</a>
         <a href="blog.html" class="nav-item">Blog</a>
-         <a href="support.html" class="nav-item">Support The Developer</a>
-
         <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
     </div>
 
     <div class="row">
         <div class="col-6">
-            <h1>Buzzers</h1>
-            <ul id="classinfo">
-                <li>Buzzers are electronic components which can be used to make sound.</li>
-                <li>There are different types of buzzers, but the two mentioned in this module are called piezoelectric and magnetic buzzers.</li>
-                <li>Piezoelectric buzzers use piezoelectric ceramics, which is a material that changes forces into an electrical signal, while magnetic buzzers use a metal plate.</li>
-                <li>Buzzers are also polarised.</li>
-            </ul>            
+            <h1>Directories</h1>
+            <ul id="basicsinfo">
+                <li>Directories, also known as folders, are digital "areas" where files can be stored.</li>
+                <li>To make a directory in the Linux command line, use the mkdir folder_name command (make directory).</li>
+                <li>To go to a directory, use the cd command followed by the directory's name (change directory).</li>
+                <li>To go to the home directory, use the cd ~ command.</li>
+                <li>To remove an empty directory, use the rm -d command. If there are files, use the rm -f command. Make sure to follow the command with the name of your directory.</li>
+            </ul>     
         </div>
 
         <div class="col-6">
             <h1>Questions</h1>
-            <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
+            <button onclick="reveal()" id="basicsbtnshow">Press To Reveal Questions</button>
 
-            <div id="classq">
-                <h3>1) Which material do piezoelectric buzzers use?</h3>
-                <input type="text" id="elt31">
+            <div id="basicsquestions">
+                <h3>2) Which command do I use to go to a directory?</h3>
+                <input type="text" id="cmd1">
 
-                <h3>2) Are buzzers polarised?</h3>
-                <input type="text" id="elt32">
+                <h3>2) Create a directory called directory_1.</h3>
+                <input type="text" id="cmd2">
 
-                <h3>3) Name both types of buzzers mentioned in this module with a space between them.</h3>
-                <p>Your answer should be in alphabetical order and not contain the word "buzzer"</p>
-                <input type="text" id="elt33">
+                <h3>3) Now, delete the directory.</h3>
+                <input type="text" id="cmd3">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>
                 <p id="extra1"></p>
                 <p id="extra2"></p>
                 <p id="extra3"></p>
+
             </div>
         </div>
     </div>

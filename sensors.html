@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="electronics_3.js" defer></script>
+    <script src="sensors.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -32,19 +32,39 @@
         <a href="electronics.html" class="nav-item">Electronics</a>
         <a href="lua.html" class="nav-item">Lua Scripting</a>
         <a href="blog.html" class="nav-item">Blog</a>
-         <a href="support.html" class="nav-item">Support The Developer</a>
-
         <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
     </div>
 
     <div class="row">
         <div class="col-6">
-            <h1>Buzzers</h1>
+            <h1>Sensors</h1>
             <ul id="classinfo">
-                <li>Buzzers are electronic components which can be used to make sound.</li>
-                <li>There are different types of buzzers, but the two mentioned in this module are called piezoelectric and magnetic buzzers.</li>
-                <li>Piezoelectric buzzers use piezoelectric ceramics, which is a material that changes forces into an electrical signal, while magnetic buzzers use a metal plate.</li>
-                <li>Buzzers are also polarised.</li>
+                <li>Sensors are electronics components which collect input.</li>
+                <li>We can then use that input to create an output, such as turn on an LED.</li>
+                <li>We can also connect sensors with a microcontroller and program the microcontroller so we can use the sensor.</li>
+                <li>Examples of sensors include: </li>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                    </tr>
+
+                    <tr>
+                        <td>HC-SR04 (Ultrasonic Sensor)</td>
+                        <td>To find out how many ms it took for a sound to hit an object.</td>
+                    </tr>
+
+                    <tr>
+                        <td>IR sensor</td>
+                        <td>To detect IR.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fire detection sensor</td>
+                        <td>To detect fire.</td>
+                    </tr>
+                </table>
+
             </ul>            
         </div>
 
@@ -53,17 +73,17 @@
             <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
 
             <div id="classq">
-                <h3>1) Which material do piezoelectric buzzers use?</h3>
-                <input type="text" id="elt31">
+                <h3>1) What is a HC-SR04?</h3>
+                <input type="text" id="sensors1">
 
-                <h3>2) Are buzzers polarised?</h3>
-                <input type="text" id="elt32">
+                <h3>2) What can we use sensors for?</h3>
+                <input type="text" id="sensors2">
 
-                <h3>3) Name both types of buzzers mentioned in this module with a space between them.</h3>
-                <p>Your answer should be in alphabetical order and not contain the word "buzzer"</p>
-                <input type="text" id="elt33">
+                <h3>3) What do sensors collect?</h3>
+                <input type="text" id="sensors3">
+		
+		<button onclick="mark()" class="blue-bg">Mark Answers</button>
 
-                <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>
                 <p id="extra1"></p>
                 <p id="extra2"></p>

@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="electronics_1.js" defer></script>
+    <script src="comments.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -39,14 +39,19 @@
 
     <div class="row">
         <div class="col-6">
-            <h1>LEDs & Breadboards</h1>
+            <h1>Comments</h1>
             <ul id="classinfo">
-                <li>LED stands for Light Emitting Diode.</li>
-                <li>LEDs are a type of diode, which means they only allow current to travel in one way </li>
-                <li>LEDs have two leads/legs/pins. The longer one is the anode (goes to the + side of a battery) and another is the cathode (- side).</li>
-                <li>Breadboards are used to prototype circuits.</li>
-                <li>They might have two rows at the top and bottom, one for VCC (voltage) and the other for ground (-).</li>
-                <li>The columns in a breadboard are connected.</li>
+                <li>Commenting your code can be a useful way to explain what lines of your code do.</li>
+                <li>You should not have to comment every line of your code as your code should be clear.</li>
+                <h2>Bad Example (Lua)</h2>
+                print("hello world") ~~ Prints "hello world"
+                x = 3 ~~ Sets a variable called x to 3
+                print(x) ~~ Prints x 
+                <hr>
+                <h2>Good Example (Lua)</h2>
+                print("hello world")
+                x = 3 ~~ X defined to print it
+                print(x)
             </ul>            
         </div>
 
@@ -55,14 +60,12 @@
             <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
 
             <div id="classq">
-                <h3>1) What is connected in a breadboard?</h3>
-                <input type="text" id="elt1">
+                <h3>1) What should comments do?</h3>
+                <input type="text" id="comments1">
 
-                <h3>2) How many legs do LEDs have? </h3>
-                <input type="text" id="elt2">
-
-                <h3>3) What does LED stand for></h3>
-                <input type="text" id="elt3">
+                <h3>2) Should you comment every line of your code?</h3>
+                <p>Answer with either Yes or No.</p>
+                <input type="text" id="comments2">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>

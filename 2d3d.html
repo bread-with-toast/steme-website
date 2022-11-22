@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="electronics_3.js" defer></script>
+    <script src="2d3d.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
     <link rel="icon" href="icon.png">
@@ -32,19 +32,24 @@
         <a href="electronics.html" class="nav-item">Electronics</a>
         <a href="lua.html" class="nav-item">Lua Scripting</a>
         <a href="blog.html" class="nav-item">Blog</a>
-         <a href="support.html" class="nav-item">Support The Developer</a>
-
+        <a href="support.html" class="nav-item">Support The Developer</a>
         <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
     </div>
 
     <div class="row">
         <div class="col-6">
-            <h1>Buzzers</h1>
+            <h1>2D or 3D CAD</h1>
             <ul id="classinfo">
-                <li>Buzzers are electronic components which can be used to make sound.</li>
-                <li>There are different types of buzzers, but the two mentioned in this module are called piezoelectric and magnetic buzzers.</li>
-                <li>Piezoelectric buzzers use piezoelectric ceramics, which is a material that changes forces into an electrical signal, while magnetic buzzers use a metal plate.</li>
-                <li>Buzzers are also polarised.</li>
+                <li>2D CAD and 3D CAD might need different software to create them.</li>
+                <li>2D CAD offers two different views; an isometric and orthogonal view.</li>
+                <li>3D CAD offers a full 360 degree view of your object.</li>
+                <h2>Examples</h2>
+                <img src="cadpic1" alt="Picture of a 3D CAD cube" width="500px">
+                <p><i>Picture of a 3D CAD cube</i></p>
+                <img src="cadpic2" alt="Picture of a 2D CAD cube in isometric view and grid" width="500px">
+                <p><i>Picture of a 2D CAD cube in isometric view with an isometric grid.</i></p>
+                <p>You can use software like LibreCAD to design a 2D CAD image.</p>
+                <p>You can use software like OpenSCAD to design a 3D CAD image.</p>
             </ul>            
         </div>
 
@@ -53,15 +58,12 @@
             <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
 
             <div id="classq">
-                <h3>1) Which material do piezoelectric buzzers use?</h3>
-                <input type="text" id="elt31">
+                <h3>1) Name the two views in 2D CAD mentioned here</h3>
+                <input type="text" id="cad21">
 
-                <h3>2) Are buzzers polarised?</h3>
-                <input type="text" id="elt32">
+                <h3>2) Which software mentioned here can be used to create a 2D CAD image?</h3>
+                <input type="text" id="cad22">
 
-                <h3>3) Name both types of buzzers mentioned in this module with a space between them.</h3>
-                <p>Your answer should be in alphabetical order and not contain the word "buzzer"</p>
-                <input type="text" id="elt33">
 
                 <button onclick="mark()" class="blue-bg">Mark Answers</button>
                 <p id="results"></p>
