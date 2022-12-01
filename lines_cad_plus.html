@@ -14,61 +14,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
-    <script src="files.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
+    <script src="plus-code.js" defer></script>
     <link rel="icon" href="icon.png">
     <meta name="description" content="Free lessons in a compact format so you can learn">
     <meta name="keywords" content="HTML, CSS, Web design, website design, learn, education, free education, easy lessons, scripting, portable education, how to make a website">
-<script src="https://api.sparky.run/widget?id=631e0f5c9ed718e226416569" type="text/javascript" crossorigin="anonymous"></script>    <title>STEMe</title> 
+    <meta name="google-site-verification" content="0riBPvfdt-weIVNzOmvesgEz4Hz-lyrV7gW5IPARhNo" />
+    <script src="https://api.sparky.run/widget?id=631e0f5c9ed718e226416569" type="text/javascript" crossorigin="anonymous"></script>        <title>STEMe</title> 
+    <title>STEMe</title>
 </head>
 <body>
     <div class="nav">
         <a class="nav-logo" href="index.html" style="color: black;"> STE<span class="blue">Me</span> </a>
-
         <a href="index.html" class="nav-item">Home</a>
         <a href="courses.html" class="nav-item">Courses</a>
         <a href="web_design.html" class="nav-item">Web Design</a>
         <a href="electronics.html" class="nav-item">Electronics</a>
         <a href="steme_plus.html" class="nav-item">STEMe+</a>
         <a href="blog.html" class="nav-item">Blog</a>
+        <a href="support.html" class="nav-item">Support The Developer</a>
         <a href="attribution.html" class="nav-item">Attribution + 3rd Party Licenses</a>
     </div>
 
-    <div class="row">
-        <div class="col-6">
-            <h1>Files</h1>
-            <ul id="classinfo">
-                <li>Files are a key part of using a computer.</li>
-                <li>To create a file, use the touch command followed by the file's name.</li>
-                <li>To write to the file, use the cat > command followed by the file's name.</li>
-                <li>If you want to read a file, you can use the cat command with the file's name.</li>
-                <li>To remove a file, use the rm command with the file's name.</li>
-            </ul>            
-        </div>
+    <h1>Lines, squares and rectangles in LibreCAD</h1>
 
-        <div class="col-6">
-            <h1>Questions</h1>
-            <button onclick="reveal()" id="classbtnshow">Press To Reveal Questions</button>
+    <div id="nothidden">
+        <input type="text" id="code" placeholder="Code Here">
+        <button onclick="check_code()">Submit</button>
+    </div>
 
-            <div id="classq">
-                <h3>1) What does the cat command do?</h3>
-                <input type="text" id="files1">
-
-                <h3>2) Create a file called file1.txt</h3>
-                <input type="text" id="files2">
-
-                <h3>3) Open the file for editing.</h3>
-                <input type="text" id="files3">
-		
-		        <button onclick="mark()" class="blue-bg">Mark Answers</button>
-
-                <p id="results"></p>
-                <p id="extra1"></p>
-                <p id="extra2"></p>
-                <p id="extra3"></p>
-            </div>
-        </div>
+    <div id="content">
+        <h3 class="blue-bg" style="padding: 5px; border-radius: 5px; width: 40%">STEMe+ Video Module</h3>
+        <video src="shapes1_cad_plus.webm" controls></video>
     </div>
 
     <footer class="cardNew">
